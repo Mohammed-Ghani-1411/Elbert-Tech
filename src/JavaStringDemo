@@ -1,0 +1,54 @@
+public class JavaStringDemo {
+        public static void main(String[] args)
+{
+            // 1) Using length() method to reverse String txt variable
+            String txt = "Hello";
+            String rev = "";
+            for(int i  = 0;i < txt.length();i++)
+{
+                rev = txt.charAt(i)+rev;
+
+            System.out.println("1) Reversed String: "+rev);
+            // 2) Using concat() to get "Hello World"
+            String txt2 = " World";
+            String txt3 = txt.concat(txt2);
+            System.out.println("2) "+txt3);
+
+            // 3) Using toUpperCase() and toLowerCase() on String txt3
+            System.out.println("3) ");
+            System.out.println(txt3.toLowerCase());
+            System.out.println(txt3.toUpperCase());
+
+            // 4) Using indexOf() to get the Index of String txt3
+            System.out.println("4) "+txt3.indexOf("World"));
+
+            // 5) Using charAt() on String txt3
+            System.out.println("5) "+txt3.charAt(4));
+
+            // 6) Using toCharArray to get the char of String txt3
+            char[] myArray = txt3.toCharArray();
+            System.out.println("6) "+myArray[6]);
+
+            // 7) Using trim on String txt4
+            String txt4 = " Java ";
+            System.out.println("7) "+txt4.trim());
+
+            // 8) Using equals() on txt5 and txt6
+            String txt5 = "Code";
+            String txt6 = "Code";
+
+            System.out.println("8) "+txt5.equals(txt6));
+
+            // 9) Using equalsIgnoreCase() on txt6 and txt7
+            String txt7 = "code";
+            System.out.println("9) "+txt6.equalsIgnoreCase(txt7));
+
+            // 10) Using replace() on txt7
+            System.out.println("10) "+txt7.replace('c','r'));
+
+            // 11) Using substring() on txt8
+            String txt8 = "Sunday";
+            System.out.println("11) "+txt8.substring(0,3));
+        }
+    }
+
